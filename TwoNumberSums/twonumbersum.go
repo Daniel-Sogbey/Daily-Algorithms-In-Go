@@ -5,18 +5,18 @@ import "sort"
 /*
 Two Number Sum •
 Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the target sum, the function should return them in an array, in any order. If no two numbers sum up to the target sum, the function should return an empty array.
-Note that the target sum has to be obtained by summing two different integers in the arrav: vou can't add a single integer to itself in order to obtain the target sum.
+Note that the target sum has to be obtained by summing two different integers in the array: vou can't add a single integer to itself in order to obtain the target sum.
 You can assume that there will be at most one pair of numbers summing up to the target sum.
 */
 
 func main() {
-
+	// TwoNumberSum1()
 }
 
 //Solution 1
 
 // O(n*2) Time | O(1) space
-func TwoNumberSum(array []int, target int) []int {
+func TwoNumberSum1(array []int, target int) []int {
 	// Write your code here.
 	for i := 0; i < len(array); i++ {
 		for j := 0; j < len(array); j++ {
@@ -30,7 +30,7 @@ func TwoNumberSum(array []int, target int) []int {
 
 // Solution 2
 // O(n) Time | O(n) space
-func TwoNumberSum(array []int, target int) []int {
+func TwoNumberSum2(array []int, target int) []int {
 	im := make(map[int]bool)
 
 	for i := 0; i < len(array); i++ {
@@ -47,7 +47,7 @@ func TwoNumberSum(array []int, target int) []int {
 
 // Solution 3
 // O(nlogn) Time | O(1) space
-func TwoNumberSum(array []int, target int) []int {
+func TwoNumberSum3(array []int, target int) []int {
 	// Write your code here.
 
 	sort.Ints(array)
