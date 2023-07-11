@@ -1,6 +1,9 @@
 package main
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
 /*
 Two Number Sum •
@@ -11,6 +14,11 @@ You can assume that there will be at most one pair of numbers summing up to the 
 
 func main() {
 	// TwoNumberSum1()
+	array := []int{-3, -1, -4, 5, 6, 7, 10, 11}
+	target := 10
+	fmt.Println(twoNumberSum1(array, target))
+	fmt.Println(twoNumberSum2(array, target))
+	fmt.Println(twoNumberSum3(array, target))
 }
 
 //Solution 1
