@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	str := "abcdcba"
 	fmt.Println(IsPalindrome(str))
+	fmt.Println(isPalindromePractice(str))
 }
 
 func IsPalindrome(str string) bool {
