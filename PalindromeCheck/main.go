@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 	str := "abcdcba"
-	fmt.Println(IsPalindrome(str))
+	fmt.Println(IsPalindrome2(str))
 	fmt.Println(isPalindromePractice(str))
 }
 
-func IsPalindrome(str string) bool {
+func IsPalindrome1(str string) bool {
 	// Write your code here.
 	left := 0
 	right := len(str) - 1
@@ -21,4 +21,20 @@ func IsPalindrome(str string) bool {
 		right--
 	}
 	return true
+}
+
+func IsPalindrome2(str string) bool {
+	// Write your code here.
+
+	newStr := ""
+
+	for i := len(str) - 1; i >= 0; i-- {
+		newStr += string(str[i])
+
+		// fmt.Println(string(str[i]), string(newStr[i]))
+	}
+
+	return newStr == str
+
+	// return false
 }
