@@ -8,6 +8,7 @@ func main() {
 	fmt.Println(isPalindromePractice(str))
 }
 
+// solution 1 : O(n) Time | O(1) space
 func IsPalindrome1(str string) bool {
 	// Write your code here.
 	left := 0
@@ -23,6 +24,7 @@ func IsPalindrome1(str string) bool {
 	return true
 }
 
+// solution 2 : O(n*2) Time | O(n) space
 func IsPalindrome2(str string) bool {
 	// Write your code here.
 
