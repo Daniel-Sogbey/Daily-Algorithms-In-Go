@@ -10,6 +10,7 @@ func main() {
 	letters := "xyz"
 	key := 2
 	fmt.Println(caeserCipherEncryptor(letters, key))
+	fmt.Println(CaeserCipherEncryptorPractice(letters, key))
 }
 
 // solution 1 : O(n) Time | O(n) Space
