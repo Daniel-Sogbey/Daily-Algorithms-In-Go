@@ -19,11 +19,13 @@ func main() {
 	fmt.Println(twoNumberSum1(array, target))
 	fmt.Println(twoNumberSum2(array, target))
 	fmt.Println(twoNumberSum3(array, target))
+	fmt.Println(twoNumberSum4(array, target))
+	fmt.Println(twoNumberSum5(array, target))
 }
 
 //Solution 1
 
-// O(n*2) Time | O(1) space
+// O(n^2) Time | O(1) space
 func TwoNumberSum1(array []int, target int) []int {
 	// Write your code here.
 	for i := 0; i < len(array); i++ {
