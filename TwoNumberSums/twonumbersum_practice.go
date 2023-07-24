@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-// solution 1 : O(n*2) time | O(1) space
+// solution 1 : O(n^2) time | O(1) space
 func twoNumberSum1(array []int, target int) []int {
 	for i := 0; i < len(array); i++ {
 		firstNumber := array[i]
