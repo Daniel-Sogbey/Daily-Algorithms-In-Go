@@ -21,6 +21,7 @@ func main() {
 	fmt.Println(twoNumberSum3(array, target))
 	fmt.Println(twoNumberSum4(array, target))
 	fmt.Println(twoNumberSum5(array, target))
+	fmt.Println(twoSum(array, target))
 }
 
 //Solution 1
@@ -78,4 +79,30 @@ func TwoNumberSum3(array []int, target int) []int {
 	}
 
 	return []int{}
+}
+
+func twoSum(nums []int, target int) []int {
+	hashMap := make(map[int]bool)
+
+	for i, num := range nums {
+		complement := target - num
+
+		if !hashMap[complement] {
+			hashMap[num] = true
+		} else {
+			return []int{i, indexOf(complement, nums)}
+		}
+	}
+
+	return []int{}
+}
+
+func indexOf(value int, source []int) int {
+	for i, num := range source {
+		if num == value {
+			return i
+		}
+	}
+
+	return -1
 }
