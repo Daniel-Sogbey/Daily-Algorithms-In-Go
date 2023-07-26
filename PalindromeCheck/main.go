@@ -24,7 +24,7 @@ func IsPalindrome1(str string) bool {
 	return true
 }
 
-// solution 2 : O(n*2) Time | O(n) space
+// solution 2 : O(n^2) Time | O(n) space
 func IsPalindrome2(str string) bool {
 	// Write your code here.
 
