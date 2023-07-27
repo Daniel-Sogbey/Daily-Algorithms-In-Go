@@ -4,6 +4,9 @@ use (
 	"./caeser cipher encryptor"
 	.
 	./PalindromeCheck
+	./RemoveDuplicateFromSortedArray
+	./RemoveElement
 	./RunLengthEncoding
 	./TwoNumberSums
+	./removeElement
 )
