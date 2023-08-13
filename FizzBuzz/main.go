@@ -18,7 +18,7 @@ func fizzBuzz(n int) []string {
 
 	for i, answer := range answers {
 		currentAnswer, _ := strconv.Atoi(answer)
-		fmt.Println(currentAnswer)
+		// fmt.Println(currentAnswer)
 		if currentAnswer%3 == 0 {
 			answers[i] = "Fizz"
 		}
